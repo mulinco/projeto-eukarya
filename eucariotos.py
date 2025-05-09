@@ -1,6 +1,5 @@
 import os
 
-# Lista de gêneros eucariotos
 generos = [
     "Acanthamoeba", "Agaricus", "Aegagropila", "Amoeba", "Amphimedon", "Aplanochytrium", "Arabidopsis",
     "Bigelowiella", "Blastocystis", "Capsaspora", "Chlamydomonas", "Chondrus", "Corallochytrium",
@@ -11,10 +10,9 @@ generos = [
     "Trypanosoma", "Volvox"
 ]
 
-# Caminho onde estão os arquivos (ajuste se necessário)
+
 pasta = "C:/Users/mulin/OneDrive/Documentos/eukarya"
 
-# Percorre todos os arquivos com o padrão desejado
 for nome_arquivo in os.listdir(pasta):
     if nome_arquivo.startswith("LUCAdup_aln_") and nome_arquivo.endswith(".fasta"):
         caminho_entrada = os.path.join(pasta, nome_arquivo)
